@@ -63,63 +63,65 @@ To get started:
 
 #### 4.2. Set Model and Knowledge Base
 1. In the action editor, select the model: **granite-3-8b-instruct (recommended)**.
-2. Add the following to the **Knowledge** section:
-```
-**Financial Investment Products Categorized by Client Profiles (From Conservative to Aggressive)**  
-
-### **Conservative Profile**  
-1. **Secure Treasury Fund**  
-   *Description*: A low-risk investment fund focused on government treasury bonds with short-to-medium maturity dates, providing stable returns with minimal volatility.  
-   *Assets Included*: U.S. Treasury bonds, municipal bonds, and savings certificates.  
-
-2. **Fixed Deposit Growth Account**  
-   *Description*: A time-locked deposit account with a guaranteed interest rate, ideal for preserving capital while earning predictable returns.  
-   *Assets Included*: Bank fixed deposits.  
-
-3. **Government Securities Portfolio**  
-   *Description*: A portfolio of investment-grade government securities offering reliable returns with virtually no default risk.  
-   *Assets Included*: Federal bonds and T-Bills.  
-
-4. **Corporate Bond Ladder**  
-   *Description*: A structured investment in high-quality corporate bonds, ensuring consistent interest payouts over staggered maturity dates.  
-   *Assets Included*: AAA-rated corporate bonds.  
-
-5. **Capital Preservation Fund**  
-   *Description*: A mutual fund designed to safeguard principal investment, offering modest returns by investing in high-rated debt instruments.  
-   *Assets Included*: Treasury bills, sovereign bonds, and high-grade corporate bonds.  
-
----
-
-### **Moderate Profile**  
-6. **Balanced Growth Fund**  
-   *Description*: A diversified mutual fund combining equities and fixed-income securities to achieve steady growth and moderate risk exposure.  
-   *Assets Included*: 50% large-cap stocks, 50% bonds.  
-
-7. **Dividend Yield Portfolio**  
-   *Description*: A portfolio focused on stocks from companies with a strong history of paying dividends, offering a blend of income and growth.  
-   *Assets Included*: Dividend-paying stocks, REITs, and preferred shares.  
-
-8. **Index Tracker ETF**  
-   *Description*: An exchange-traded fund that mirrors the performance of a major stock market index, providing low-cost diversification.  
-   *Assets Included*: S&P 500 or Nasdaq 100 stocks.  
-
----
-
-### **Aggressive Profile**  
-9. **Emerging Market Opportunities Fund**  
-   *Description*: A high-risk, high-reward fund investing in equities and bonds from rapidly growing emerging markets worldwide.  
-   *Assets Included*: Emerging market stocks and sovereign debt.  
-
-10. **High-Growth Tech Venture Portfolio**  
-   *Description*: A portfolio focusing on early-stage technology companies and innovative startups, offering the potential for significant capital gains.  
-   *Assets Included*: Growth stocks, IPO shares, and venture capital funds.  
-```
+2. Add the following to the **Knowledge** section: [Financial Product Advisor Knowledge](https://github.com/cguillencr/watson_orchestrate/blob/main/demos/financial_product_advisor/Knowledge.md)
 3. Include the following in the **Instructions** section:
 ```
 Respond as a customer service agent in a friendly and accurate manner.
 ```
 
 ### Final Steps
-- Test your bot to ensure the conditional steps and custom actions are working as expected.
-  <img src="https://github.com/user-attachments/assets/eae6609a-f604-44d1-8759-a2149d577c35"  width="900" height="300"  />
 
+- Test your bot to ensure the conditional steps and custom actions are working as expected.  
+  <img src="https://github.com/user-attachments/assets/eae6609a-f604-44d1-8759-a2149d577c35" width="900" height="300" />
+
+---
+
+#### Test 1  
+**Input:**  
+```
+Hi, I'm looking to invest in the stock market. What do you recommend?
+```
+
+**Response:**  
+```
+Hello! I'd be happy to help you explore some investment options based on the provided context.
+
+For a balanced approach, you might consider the "Balanced Growth Fund" under the Moderate Profile. This fund combines equities and fixed-income securities to achieve steady growth with moderate risk exposure. It's a good option if you're looking for a mix of income and growth.
+
+If you're interested in companies with a strong history of paying dividends, the "Dividend Yield Portfolio" could be a suitable choice. This portfolio includes dividend-paying stocks, REITs, and preferred shares.
+
+For those seeking higher potential returns, the "Emerging Market Opportunities Fund" under the Aggressive Profile might be of interest. This fund invests in equities and bonds from rapidly growing emerging markets worldwide, offering high-risk, high-reward potential.
+
+Remember, it's important to consider your personal financial goals, risk tolerance, and investment horizon when choosing an investment product. If you need more personalized advice, I would recommend consulting with a financial advisor.
+```
+
+**Screenshot:**  
+![image](https://github.com/user-attachments/assets/bc78efc6-5a59-4cf8-afc4-bcc172d13543)
+
+---
+
+#### Test 2  
+**Input:**  
+```
+What low-risk investment products do you have available?
+```
+
+**Response:**  
+```
+For clients with a conservative profile, we offer several low-risk investment products. These include:
+
+Secure Treasury Fund: This fund invests in government treasury bonds with short-to-medium maturity dates, providing stable returns with minimal volatility.
+
+Fixed Deposit Growth Account: This is a time-locked deposit account with a guaranteed interest rate, ideal for preserving capital while earning predictable returns.
+
+Government Securities Portfolio: This portfolio consists of investment-grade government securities offering reliable returns with virtually no default risk.
+
+Corporate Bond Ladder: This involves a structured investment in high-quality corporate bonds, ensuring consistent interest payouts over staggered maturity dates.
+
+Capital Preservation Fund: This mutual fund is designed to safeguard principal investment, offering modest returns by investing in high-rated debt instruments.
+
+These options are suitable for those who prioritize capital preservation and seek steady, albeit modest, returns over high growth potential.
+```
+
+**Screenshot:**  
+![image](https://github.com/user-attachments/assets/1c7a3012-608c-43b1-9306-3350989af012)
