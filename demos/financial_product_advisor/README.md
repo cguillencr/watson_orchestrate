@@ -1,6 +1,5 @@
-# How to Get Started with Watson Orchestrate to Build a Bot Using Granite-3-8B-Instruct
-
-This guide walks you through creating a bot in Watson Orchestrate using the Assistant Builder and the recommended model `granite-3-8b-instruct`. Follow these steps to set up a bot and configure its actions effectively.
+# Creating a Financial Advisor Bot with Watson Orchestrate
+In this example, a Proof of Value (POV) is created to demonstrate how a bot could be implemented as a financial advisor. This bot can recommend investment products to clients that best match their needs.
 
 ## Steps to Create a Bot
 
